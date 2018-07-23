@@ -13,7 +13,7 @@ function play(fPlayer, sPlayer) {
         let board = $("#board");
         let fPlayerTd = $("<td>").attr("id", "firstPlayer").text(`${firstPlayer.name} ${firstPlayer.score}т.`);
         let sPlayerTd = $("<td>").attr("id", "secondPlayer").text(`${secondPlayer.name} ${secondPlayer.score}т.`);
-        let table = $("<table>").attr("id", "players").append($("<tr>")).append(fPlayerTd).append(sPlayerTd);
+        let table = $("<table>").attr("id", "players").addClass("players").append($("<tr>").append(fPlayerTd).append(sPlayerTd));
         board.append(table);
 
         let boardTable = $("<table id='boardTable'>");
@@ -49,6 +49,7 @@ function play(fPlayer, sPlayer) {
                 checkWin(sign, moves);
 
                 td.attr("clicked", "true");
+                td.css("cursor", "default");
             }
         });
     }

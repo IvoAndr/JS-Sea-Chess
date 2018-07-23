@@ -8,7 +8,7 @@ body {
     position: absolute;
     top: 60px;
     left: 60px;
-    border: darkblue groove 3px;
+    border: darkred groove 3px;
     padding: 30px;
     background-image: url("../img/wood_bg.jpg");
     background-size: auto;
@@ -18,14 +18,15 @@ body {
 
 table {
     position: relative;
-    left: auto;
-    right: auto;
+    width: 100%;
+    left: 6px;
+    right: 6px;
 }
 
 .boardTd {
     width: 90px;
     height: 90px;
-    border: darkgray groove 3px;
+    border: darkred groove 3px;
     background: #AAA;
     font-size: 75px;
     text-align: center;
@@ -60,4 +61,8 @@ a {
 .winCell {
     font-size: 81px;
     background: #00AA00;
+}
+
+.players {
+    text-align: center;
 }
